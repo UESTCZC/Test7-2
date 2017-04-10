@@ -4,29 +4,29 @@ public class StuScore {
 		private int []copyGrade=new int[30];
 		private int []copyNeiBuBianHao=new int[30];
 	/*public StuScore() {
-		// TODO ×Ô¶¯Éú³ÉµÄ¹¹Ôìº¯Êı´æ¸ùprivate int i;
+		// TODO è‡ªåŠ¨ç”Ÿæˆçš„æ„é€ å‡½æ•°å­˜æ ¹private int i;
 
 	
 		}*/
 	   
 		public StuScore(Student student[]) {
-			// ÕâÊÇÏÈ°ÑÇ°Á½¸öÔªËØÅÅºÃÎ»ÖÃ£¬ÔÙ°ÑµÚÈı¸öÅÅºÃÎ»£¬ÒÔ´ËÀàÍÆ£¬ÒªÅÅĞòµÄÔªËØÖ®Ç°¶¼ÊÇÅÅºÃÁËµÄ
+			// è¿™æ˜¯å…ˆæŠŠå‰ä¸¤ä¸ªå…ƒç´ æ’å¥½ä½ç½®ï¼Œå†æŠŠç¬¬ä¸‰ä¸ªæ’å¥½ä½ï¼Œä»¥æ­¤ç±»æ¨ï¼Œè¦æ’åºçš„å…ƒç´ ä¹‹å‰éƒ½æ˜¯æ’å¥½äº†çš„
 			luRuGrade( student);
-			for (int j = 1; j < copyGrade.length; j++) {// Õâ¸öËã·¨Ö»ÄÜ´ÓÊı×éµÄµÚ¶ş¸öÖµ¿ªÊ¼£¬Èô´ÓµÚÈı¸ö¿ªÊ¼¿¼ÂÇ2 3
-												// 1ÕâÖÖÇé¿ö
+			for (int j = 1; j < copyGrade.length; j++) {// è¿™ä¸ªç®—æ³•åªèƒ½ä»æ•°ç»„çš„ç¬¬äºŒä¸ªå€¼å¼€å§‹ï¼Œè‹¥ä»ç¬¬ä¸‰ä¸ªå¼€å§‹è€ƒè™‘2 3
+												// 1è¿™ç§æƒ…å†µ
 				int key = copyGrade[j];
-				int keyNeiBu=copyNeiBuBianHao[j];// Éè¼Æ±ê¼Ç
+				int keyNeiBu=copyNeiBuBianHao[j];// è®¾è®¡æ ‡è®°
 				i = j - 1;
-				while (i >= 0 && copyGrade[i] <key) {// ´Ó±ê¼ÇµÄÇ°Ò»¸öÔªËØ¿ªÊ¼±È½Ï
+				while (i >= 0 && copyGrade[i] <key) {// ä»æ ‡è®°çš„å‰ä¸€ä¸ªå…ƒç´ å¼€å§‹æ¯”è¾ƒ
 					copyGrade[i + 1] = copyGrade[i];
-					copyNeiBuBianHao[i+1]=copyNeiBuBianHao[i];// £¨Ö»ÊÇÆğÒ»¸öÒÆÎ»×÷ÓÃ£©Ìõ¼ş³ÉÁ¢ËµÃ÷Ç°Ò»¸ö±È±ê¼Ç´ó£¬Ôò½«Ç°Ò»¸öÔªËØ¸³Öµ¸øºóÒ»¸öÔªËØ
-					i = i - 1;// È»ºóÓÖ´ÓÇ° Ç°Ò»¸öÔªËØ¿ªÊ¼±È½Ï±ê¼Çkey£¬ÈôÇ°Ç°ÔªËØÒ²±È±ê¼Ç´ó
+					copyNeiBuBianHao[i+1]=copyNeiBuBianHao[i];// ï¼ˆåªæ˜¯èµ·ä¸€ä¸ªç§»ä½ä½œç”¨ï¼‰æ¡ä»¶æˆç«‹è¯´æ˜å‰ä¸€ä¸ªæ¯”æ ‡è®°å¤§ï¼Œåˆ™å°†å‰ä¸€ä¸ªå…ƒç´ èµ‹å€¼ç»™åä¸€ä¸ªå…ƒç´ 
+					i = i - 1;// ç„¶ååˆä»å‰ å‰ä¸€ä¸ªå…ƒç´ å¼€å§‹æ¯”è¾ƒæ ‡è®°keyï¼Œè‹¥å‰å‰å…ƒç´ ä¹Ÿæ¯”æ ‡è®°å¤§
 				}
 				copyGrade[i + 1] = key;
 				copyNeiBuBianHao[i+1]=keyNeiBu;
-				//System.out.println("ĞŞ¸Ä²âÊÔ");//Ö»ÊÇÆğÒ»¸öÒÆÎ»×÷ÓÃ
+				//System.out.println("ä¿®æ”¹æµ‹è¯•");//åªæ˜¯èµ·ä¸€ä¸ªç§»ä½ä½œç”¨
 			}
-			System.out.println("\n"+"\n"+"\n"+"ÒÔÏÂÊÇ¶Ô³É¼¨µÄÅÅĞò");
+			System.out.println("\n"+"\n"+"\n"+"ä»¥ä¸‹æ˜¯å¯¹æˆç»©çš„æ’åº");
 			for(int k=0;k<copyNeiBuBianHao.length;k++){
 				int l=copyNeiBuBianHao[k];
 				student[l].show();
