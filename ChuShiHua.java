@@ -10,7 +10,7 @@ public class ChuShiHua {
 		setName( );
 	}
 	
-		// TODO ×Ô¶¯Éú³ÉµÄ¹¹Ôìº¯Êı´æ¸ù
+		// TODO è‡ªåŠ¨ç”Ÿæˆçš„æ„é€ å‡½æ•°å­˜æ ¹
 	public void setIdNumber(){
 		int  []qunIdNumber=new int[30];
 		
@@ -36,8 +36,8 @@ public class ChuShiHua {
 	}
 	
 	public void setName(){
-		String []firstName={"ÕÅ","¶À¹Â","ÓîÖÇ²¨","Ä½Èİ","Áõ","ÇØ","Ò¶","Âí","ÔÀ","¹·","Å·Ñô"};
-		String []lastName={"ÄáÂê","¹·µ°","ÕÔËÄ","ÌúÖù","±¾É½","¶«±±","¸ÖÑÀ","É³µñ","²»Èº","¹ÚÎ÷","µÂ»ª"};
+		String []firstName={"å¼ ","ç‹¬å­¤","å®‡æ™ºæ³¢","æ…•å®¹","åˆ˜","ç§¦","å¶","é©¬","å²³","ç‹—","æ¬§é˜³"};
+		String []lastName={"å°¼ç›","ç‹—è›‹","èµµå››","é“æŸ±","æœ¬å±±","ä¸œåŒ—","é’¢ç‰™","æ²™é›•","ä¸ç¾¤","å† è¥¿","å¾·å"};
 		Random r=new Random();
 		String[] nameTemp = new String[30];
 		for (int a = 0; a < nameTemp.length; a++) {

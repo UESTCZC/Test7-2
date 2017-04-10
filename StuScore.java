@@ -26,7 +26,7 @@ public class StuScore {
 				copyNeiBuBianHao[i+1]=keyNeiBu;
 				//System.out.println("修改测试");//只是起一个移位作用
 			}
-			System.out.println("\n"+"\n"+"\n"+"以下是对成绩的排序");
+			System.out.println("\n"+"\n"+"\n"+"以下是对成绩的排序  ");
 			for(int k=0;k<copyNeiBuBianHao.length;k++){
 				int l=copyNeiBuBianHao[k];
 				student[l].show();

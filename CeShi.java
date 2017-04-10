@@ -5,11 +5,11 @@ import java.util.ArrayList;
 public class CeShi {
 
 	public CeShi() {
-		// TODO ×Ô¶¯Éú³ÉµÄ¹¹Ôìº¯Êı´æ¸ù
+		// TODO è‡ªåŠ¨ç”Ÿæˆçš„æ„é€ å‡½æ•°å­˜æ ¹
 	}
 	
 	public static void main(String[] args) {
-		// TODO ×Ô¶¯Éú³ÉµÄ·½·¨´æ¸ù
+		// TODO è‡ªåŠ¨ç”Ÿæˆçš„æ–¹æ³•å­˜æ ¹
 		ArrayList list=new ArrayList();
 		ChuShiHua s=new ChuShiHua();
 		Student []student=new Student[30];

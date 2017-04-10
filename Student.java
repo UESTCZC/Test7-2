@@ -21,8 +21,8 @@ public class Student {
 		
 	}
 	/*public String setName(int m){
-		String []firstName={"ÕÅ","¶À¹Â","ÓîÖÇ²¨","Ä½Èİ","Áõ","ÇØ","Ò¶","Âí","ÔÀ","¹·","Å·Ñô"};
-		String []lastName={"ÄáÂê","¹·µ°","ÕÔËÄ","ÌúÖù","±¾É½","¶«±±","Ã§×Ó","É³µñ","²»Èº","¹ÚÎ÷","µÂ»ª"};
+		String []firstName={"å¼ ","ç‹¬å­¤","å®‡æ™ºæ³¢","æ…•å®¹","åˆ˜","ç§¦","å¶","é©¬","å²³","ç‹—","æ¬§é˜³"};
+		String []lastName={"å°¼ç›","ç‹—è›‹","èµµå››","é“æŸ±","æœ¬å±±","ä¸œåŒ—","è½å­","æ²™é›•","ä¸ç¾¤","å† è¥¿","å¾·å"};
 		Random r=new Random();
 		String []qunName=new String[30];
 		for(int i=0;i<qunName.length;i++){
@@ -37,23 +37,23 @@ public class Student {
 	return qunName[m];
 		String lastName=new String();
 		switch(r.nextInt(10)){
-		case 0:lastName="ÄáÂê";break;
-		case 1:lastName="¹·µ°";break;
-		case 2:lastName="ÕÔËÄ";break;
-		case 3:lastName="ÌúÖù";break;
-		case 4:lastName="±¾É½";break;
-		case 5:lastName="¶«±±";break;
-		case 6:lastName="Ã§×Ó";break;
-		case 7:lastName="É³µñ";break;
-		case 8:lastName="²»Èº";break;
-		case 9:lastName="¹ÚÎ÷";break;
+		case 0:lastName="å°¼ç›";break;
+		case 1:lastName="ç‹—è›‹";break;
+		case 2:lastName="èµµå››";break;
+		case 3:lastName="é“æŸ±";break;
+		case 4:lastName="æœ¬å±±";break;
+		case 5:lastName="ä¸œåŒ—";break;
+		case 6:lastName="è½å­";break;
+		case 7:lastName="æ²™é›•";break;
+		case 8:lastName="ä¸ç¾¤";break;
+		case 9:lastName="å† è¥¿";break;
 		default:System.exit(0);
 		}
 		 return name=firstName.concat(lastName);
 	}*/
 	public void setSex(){
 		Random r=new Random();
-		String qunSex[]={"ÄĞ","Å®"};
+		String qunSex[]={"ç”·","å¥³"};
 		this.sex=qunSex[r.nextInt(2)];
 	
 	}
